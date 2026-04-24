@@ -83,7 +83,7 @@ export default function Contact() {
               <form
                 className="contact__form"
                 onSubmit={handleSubmit}
-                action="https://formsubmit.co/ajax/sparemail101.11@gmail.com"
+                action="https://formsubmit.co/sparemail101.11@gmail.com"
                 method="POST"
               >
                 {/* FormSubmit config fields */}
