@@ -27,7 +27,9 @@ export default function LicenseModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   const handleProceed = () => {
-    if (agreed) window.open(DOWNLOAD_URL, '_blank', 'noopener,noreferrer');
+    if (!agreed) return;
+    onClose();
+    window.location.href = DOWNLOAD_URL;
   };
 
   return (

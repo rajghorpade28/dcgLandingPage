@@ -2,9 +2,9 @@ import React from 'react';
 import './Install.css';
 
 const STEPS = [
-  { num: '01', title: 'Download the Extension', code: 'Download from: https://mega.nz/folder/Ym1CWZzB#BTGeC7ZN5lD2Y7Jnwb8Ueg\nExtract the downloaded ZIP file.' },
-  { num: '02', title: 'Install & Build', code: 'cd DigitalChaffGenerator\nnpm install && npm run build' },
-  { num: '03', title: 'Load in Chrome', code: 'chrome://extensions → Developer Mode → Load Unpacked → select /dist' },
+  { num: '01', title: 'Download the Extension', code: 'Click "Download Extension" above and\nagree to the license terms to get the file.' },
+  { num: '02', title: 'Extract the ZIP', code: 'Extract the downloaded ZIP file to\na folder on your computer.' },
+  { num: '03', title: 'Load in Chrome', code: 'Go to chrome://extensions\nEnable Developer Mode → Load Unpacked\nSelect the extracted folder.' },
 ];
 
 export default function Install({ onInstallClick }) {
@@ -27,11 +27,6 @@ export default function Install({ onInstallClick }) {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="install__note">
-          <span>🔑</span>
-          <p>Optionally, add your <strong>Google Safe Browsing API key</strong> in a <code>.env</code> file for live cloud threat checking. Without it, the local ML model provides full protection.</p>
         </div>
 
         <div className="install__cta">
