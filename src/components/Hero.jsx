@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
-export default function Hero() {
+export default function Hero({ onInstallClick }) {
   return (
     <section className="hero" id="home">
       <div className="hero__glow hero__glow--1" />
@@ -24,9 +24,9 @@ export default function Hero() {
         </p>
 
         <div className="hero__actions">
-          <a href="#install" className="btn btn--primary">
+          <button className="btn btn--primary" onClick={onInstallClick}>
             ⚡ Install Extension
-          </a>
+          </button>
           <a href="https://github.com/rajghorpade28/DigitalChaffGenerator" target="_blank" rel="noreferrer" className="btn btn--ghost">
             ★ View on GitHub
           </a>

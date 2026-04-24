@@ -125,4 +125,11 @@
 @media (max-width: 720px) {
   .navbar__links { display: none; }
   .navbar__hamburger { display: flex; }
+  .navbar__install-btn { display: none; }
+}
+
+.navbar__install-btn {
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  margin-left: 8px;
 }

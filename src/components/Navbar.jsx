@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onInstallClick }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -42,6 +42,11 @@ export default function Navbar() {
           ))}
         </ul>
 
+        {/* Desktop CTA */}
+        <button className="btn btn--primary navbar__install-btn" onClick={onInstallClick}>
+          ⚡ Install
+        </button>
+
         {/* Hamburger */}
         <button
           className={`navbar__hamburger${menuOpen ? ' open' : ''}`}
@@ -65,6 +70,9 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <button className="btn btn--primary" style={{ margin: '8px 20px' }} onClick={() => { setMenuOpen(false); onInstallClick(); }}>
+            ⚡ Install Extension
+          </button>
         </div>
       )}
     </nav>

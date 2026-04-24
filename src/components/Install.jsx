@@ -7,7 +7,7 @@ const STEPS = [
   { num: '03', title: 'Load in Chrome', code: 'chrome://extensions → Developer Mode → Load Unpacked → select /dist' },
 ];
 
-export default function Install() {
+export default function Install({ onInstallClick }) {
   return (
     <section className="install section" id="install">
       <div className="container">
@@ -33,7 +33,15 @@ export default function Install() {
           <span>🔑</span>
           <p>Optionally, add your <strong>Google Safe Browsing API key</strong> in a <code>.env</code> file for live cloud threat checking. Without it, the local ML model provides full protection.</p>
         </div>
+
+        <div className="install__cta">
+          <button className="btn btn--primary btn--lg" onClick={onInstallClick}>
+            ⬇️ Download Extension
+          </button>
+          <p className="install__cta-note">By downloading, you agree to review our license terms.</p>
+        </div>
       </div>
     </section>
   );
 }
+
