@@ -2,7 +2,7 @@ import React from 'react';
 import './Install.css';
 
 const STEPS = [
-  { num: '01', title: 'Clone the Repository', code: 'git clone https://github.com/rajghorpade28/DigitalChaffGenerator.git' },
+  { num: '01', title: 'Download the Extension', code: 'Download from: https://mega.nz/folder/Ym1CWZzB#BTGeC7ZN5lD2Y7Jnwb8Ueg\nExtract the downloaded ZIP file.' },
   { num: '02', title: 'Install & Build', code: 'cd DigitalChaffGenerator\nnpm install && npm run build' },
   { num: '03', title: 'Load in Chrome', code: 'chrome://extensions → Developer Mode → Load Unpacked → select /dist' },
 ];

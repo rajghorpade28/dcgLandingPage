@@ -54,16 +54,16 @@ export default function Contact() {
               </div>
             </div>
             <div className="contact__info-item">
-              <span className="contact__info-icon">💻</span>
+              <span className="contact__info-icon">⬇️</span>
               <div>
-                <p className="contact__info-label">GitHub</p>
+                <p className="contact__info-label">Download</p>
                 <a
                   className="contact__info-value contact__info-link"
-                  href="https://github.com/rajghorpade28/DigitalChaffGenerator"
+                  href="https://mega.nz/folder/Ym1CWZzB#BTGeC7ZN5lD2Y7Jnwb8Ueg"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  rajghorpade28/DigitalChaffGenerator
+                  Get DCG on Mega.nz
                 </a>
               </div>
             </div>

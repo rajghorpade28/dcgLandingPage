@@ -27,9 +27,6 @@ export default function Hero({ onInstallClick }) {
           <button className="btn btn--primary" onClick={onInstallClick}>
             ⚡ Install Extension
           </button>
-          <a href="https://github.com/rajghorpade28/DigitalChaffGenerator" target="_blank" rel="noreferrer" className="btn btn--ghost">
-            ★ View on GitHub
-          </a>
         </div>
 
         <div className="hero__stats">
