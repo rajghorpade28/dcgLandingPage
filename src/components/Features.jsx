@@ -23,7 +23,7 @@ const FEATURES = [
   {
     icon: '🔍',
     title: 'Dual Phishing Detection',
-    desc: 'Every URL is analyzed by a local XGBoost ML model (98.86% acc) AND live Google Safe Browsing API simultaneously.',
+    desc: 'Every URL is analyzed by a local XGBoost ML model (91% acc) AND live Google Safe Browsing API simultaneously.',
     color: '#fb923c',
   },
   {

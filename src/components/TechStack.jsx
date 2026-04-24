@@ -14,7 +14,7 @@ const STACK = [
   {
     category: '🧠 Machine Learning',
     items: [
-      { name: 'XGBoost', desc: 'Gradient boosting — 98.86% phishing accuracy' },
+      { name: 'XGBoost', desc: 'Gradient boosting — 91% phishing accuracy' },
       { name: 'Python 3.10', desc: 'Training pipeline and dataset processing' },
       { name: 'Pandas', desc: '235k+ URL dataset classification' },
       { name: 'Scikit-learn', desc: 'Feature engineering and evaluation' },

@@ -31,7 +31,7 @@ export default function Hero({ onInstallClick }) {
 
         <div className="hero__stats">
           <div className="hero__stat">
-            <span className="hero__stat-value">98.86%</span>
+            <span className="hero__stat-value">91%</span>
             <span className="hero__stat-label">ML Accuracy</span>
           </div>
           <div className="hero__stat-divider" />
