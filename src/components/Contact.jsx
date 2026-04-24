@@ -53,20 +53,6 @@ export default function Contact() {
                 <p className="contact__info-value">sparemail101.11@gmail.com</p>
               </div>
             </div>
-            <div className="contact__info-item">
-              <span className="contact__info-icon">⬇️</span>
-              <div>
-                <p className="contact__info-label">Download</p>
-                <a
-                  className="contact__info-value contact__info-link"
-                  href="https://mega.nz/folder/Ym1CWZzB#BTGeC7ZN5lD2Y7Jnwb8Ueg"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Get DCG on Mega.nz
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
