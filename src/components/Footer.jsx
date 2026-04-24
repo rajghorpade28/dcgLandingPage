@@ -11,7 +11,6 @@ export default function Footer() {
         </div>
         <div className="footer__links">
           <a href="#features">Features</a>
-          <a href="#architecture">Architecture</a>
           <a href="#tech">Tech Stack</a>
           <a href="#install">Install</a>
           <a href="#contact">Contact</a>

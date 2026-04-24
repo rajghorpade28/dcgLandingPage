@@ -3,7 +3,6 @@ import './Navbar.css';
 
 const NAV_LINKS = [
   { label: 'Features', href: '#features' },
-  { label: 'Architecture', href: '#architecture' },
   { label: 'Tech Stack', href: '#tech' },
   { label: 'Install', href: '#install' },
   { label: 'Contact', href: '#contact' },

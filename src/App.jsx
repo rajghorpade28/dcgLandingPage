@@ -3,7 +3,6 @@ import './index.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import Architecture from './components/Architecture';
 import TechStack from './components/TechStack';
 import Install from './components/Install';
 import Contact from './components/Contact';
@@ -19,7 +18,6 @@ export default function App() {
       <main>
         <Hero onInstallClick={() => setLicenseOpen(true)} />
         <Features />
-        <Architecture />
         <TechStack />
         <Install onInstallClick={() => setLicenseOpen(true)} />
         <Contact />
