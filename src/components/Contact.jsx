@@ -11,18 +11,27 @@ export default function Contact() {
     const form = e.target;
     const data = new FormData(form);
 
+    const object = {};
+    data.forEach((value, key) => {
+      object[key] = value;
+    });
+
     try {
       const res = await fetch('https://formsubmit.co/ajax/sparemail101.11@gmail.com', {
         method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json' 
+        },
+        body: JSON.stringify(object),
       });
       const json = await res.json();
+      
       if (json.success === 'true' || json.success === true) {
         setSent(true);
         form.reset();
       } else {
-        // Fallback: submit form normally (causes page redirect)
+        // Fallback: submit form normally if AJAX fails (causes page redirect)
         form.submit();
       }
     } catch {
